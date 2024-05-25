@@ -4,10 +4,7 @@ Welcome to the Campus Project! This repository contains the backend and frontend
 
 ## Prerequisites
 
-- Python 3.12
-- pip (Python package installer)
-- Node.js
-- npm (Node package manager)
+- docker
 
 ## Setup Instructions
 
@@ -18,24 +15,16 @@ git clone https://github.com//rraatt/diplom_public
 cd diplom_public
 ```
 
-### 2. Install python requirements
+### 2. Add .env file with Elsevier api key
 
 ```bash
-pip install -r requirements.txt
+APIKEY=*your_key*
 ```
 
-### 3. Run backend
+### 3. start project
 
 ```bash
-cd campus-backend
-uvicorn main:app --reload
+docker-compose up --build
 ```
 
-### 4. Setup frontend
-
-```bash
-cd campus-checker
-npm install
-npm run dev
-```
 
